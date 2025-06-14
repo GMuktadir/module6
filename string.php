@@ -1,10 +1,8 @@
 <?php
 //scripted by Golam Muktadir
-$st="Hello World Php Programming";
-//string to array convertion
-$ar=explode(" ",$st);
+$strings = ["Hello", "World", "PHP", "Programming"];
 //array size
-$ar_len=count($ar);
+$ar_len=count($strings);
 //while loop counter initial
 $a=0;
 //for loop counter initial
@@ -13,7 +11,7 @@ $i=0;
 $vowel=array_fill(0,$ar_len,0); // fill all integer array to zero(0)
 
 while($a<$ar_len){
-    $w=$ar[$a];
+    $w=$strings[$a];
     for($i=0;$i<strlen($w);$i+=1){  //Check Vowel for both capital and small letters
         if($w[$i]=='a'||$w[$i]=='e'||$w[$i]=='i'||$w[$i]=='o'||$w[$i]=='u'||$w[$i]=='A'||$w[$i]=='E'||$w[$i]=='I'||$w[$i]=='O'||$w[$i]=='U'){
             $vowel[$a]++;
